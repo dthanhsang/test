@@ -76,7 +76,7 @@ def create_pptx_file(doc, pages_to_convert, mat):
     return ppt_buffer
 
 # --- GIAO DIỆN ---
-st.title("📄 PDF to Ultra-HD (Web Version)")
+st.title("📄 PDF to Ultra-HD (NGA AN CUC)")
 st.markdown("Chuyển đổi PDF sang **Ảnh** hoặc **PowerPoint** chất lượng cao (2K/4K).")
 
 with st.sidebar:
@@ -124,7 +124,7 @@ if uploaded_file:
                     file_ext = "pptx"
                     mime_type = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
                 
-                st.success("✅ Xong!")
+                st.success("✅ Xong! NGA AN CUCCC")
                 st.download_button(
                     label=f"📥 TẢI VỀ FILE .{file_ext.upper()}",
                     data=result_data,
@@ -133,4 +133,5 @@ if uploaded_file:
                     use_container_width=True
                 )
     
+
     doc.close()
